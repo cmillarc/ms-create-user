@@ -19,7 +19,7 @@ git clone https://github.com/cmillarc/prueba-usuarios.git
 Navega hasta el directorio del proyecto y utiliza Maven para compilarlo.
 
 ```sh
-cd .../ms-usuarios
+cd .../ms-create-user
 mvn clean install
 ```
 
