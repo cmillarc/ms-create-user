@@ -19,7 +19,7 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(response, HttpStatus.CONFLICT);
     }
 
-    // Let Spring BasicErrorController handle the exception, we just override the status code
+    // Handles validation errors and returns HTTP 400 Bad Request
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<Map<String, String>> customValidationErrorHandling(MethodArgumentNotValidException exception) {
         Map<String, String> errors = new HashMap<>();
